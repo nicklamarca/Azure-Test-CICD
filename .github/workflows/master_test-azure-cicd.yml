@@ -52,4 +52,10 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_AC8F87BD61444F36833F0B3503667FE4 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_F6C53927740847A7972583C84085156A }}
 
-      - name: Deploy
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'test-azure-cicd'
+          slot-name: 'Production'
+          package: .
