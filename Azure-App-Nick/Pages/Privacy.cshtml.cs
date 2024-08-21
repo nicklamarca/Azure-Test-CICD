@@ -14,6 +14,7 @@ namespace Azure_App_Nick.Pages
 
         public void OnGet()
         {
+            //throw new Exception("Testing Insights");
         }
     }
 

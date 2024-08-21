@@ -5,6 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Azure_App_Nick</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/ea101d56-bec7-4f77-aa4b-6f14a4e036eb/resourceGroups/az-course-rg/providers/microsoft.insights/components/test-azure-cicd</ApplicationInsightsResourceId>
+    <UserSecretsId>575c330c-fb85-4f26-a89e-0d4d953900d2</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+  </ItemGroup>
 
 </Project>
